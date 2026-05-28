@@ -1,0 +1,11 @@
+# GUI Framework
+PyQt6>=6.4.0
+ 
+# SSH / Remote Device
+paramiko>=3.0.0
+ 
+# Packaging
+pyinstaller>=6.0.0
+ 
+# Misc
+PyYAML>=6.0
