@@ -18,6 +18,7 @@ a = Analysis(
         'PyQt6.QtDBus',
         'configparser', 'yaml', 'importlib.util', 'importlib.machinery',
         'plugins.p01_ssh_forwarder',
+        'plugins.p02_ota_version_set',
     ],
     hookspath=[],
     runtime_hooks=[],
