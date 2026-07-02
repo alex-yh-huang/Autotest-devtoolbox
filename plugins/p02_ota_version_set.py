@@ -25,11 +25,11 @@ from core.plugin_base import PluginBase
 
 DB_HOST = "192.168.50.66"
 DB_PORT = 3306
-DB_USER = "root"
-DB_PASSWORD = "auto5566"
-DB_NAME = "fdc_information"
+DB_USER = ""
+DB_PASSWORD = ""
+DB_NAME = ""
 
-TABLE_NAME = "ota_version"
+TABLE_NAME = ""
 
 
 class OtaVersionEditDialog(QDialog):
