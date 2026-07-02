@@ -1,5 +1,5 @@
 # -*- mode: python ; coding: utf-8 -*-
-# 打包指令：pyinstaller DevToolbox.spec
+# 打包指令：pyinstaller --clean DevToolbox.spec
 
 from pathlib import Path
 block_cipher = None
@@ -11,13 +11,26 @@ a = Analysis(
     binaries=[],
     datas=[
         (str(root / 'plugins'), 'plugins'),
-        (str(root / 'core'),    'core'),
+        (str(root / 'core'), 'core'),
     ],
     hiddenimports=[
         'PyQt6.QtCore', 'PyQt6.QtGui', 'PyQt6.QtWidgets',
         'PyQt6.QtDBus',
         'configparser', 'yaml', 'importlib.util', 'importlib.machinery',
+
+        # plugins
         'plugins.p01_ssh_forwarder',
+        'plugins.p02_ota_version_set',
+
+        # PyMySQL
+        'pymysql',
+        'pymysql.cursors',
+        'pymysql.connections',
+        'pymysql.converters',
+        'pymysql.err',
+        'pymysql.optionfile',
+        'pymysql.protocol',
+        'pymysql.times',
     ],
     hookspath=[],
     runtime_hooks=[],

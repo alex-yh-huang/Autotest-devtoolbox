@@ -32,7 +32,7 @@ toolbox/
 ## 📦 打包成 .exe（Windows）
 
 ```bash
-pyinstaller DevToolbox.spec
+pyinstaller --clean DevToolbox.spec
 ```
 
 打包後的 `DevToolbox.exe` 在 `dist/` 目錄。

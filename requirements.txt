@@ -9,3 +9,5 @@ pyinstaller>=6.0.0
  
 # Misc
 PyYAML>=6.0
+
+PyMySQL
